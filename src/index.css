@@ -23,11 +23,14 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -36,14 +39,21 @@ h1 {
 }
 
 nav {
+  font-size: 30px;
+  background-color: #747bff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #1a1a1a;
 }
 
 button {
-  border-radius: 8px;
+  width: 100px;
+  border-radius: 50%;
   border: 1px solid #ccc;
-  padding: 0.6em 1.2em;
+  padding: 15px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -66,7 +76,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #646ada;
   }
   button {
     background-color: #f9f9f9;
